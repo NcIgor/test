@@ -22,7 +22,7 @@ public class Sender {
                 return session.createTextMessage(message);
             }
         };
-        System.out.println("Sending a new message.");
+        System.out.println("Sending a new message. : " + message);
 		jmsTemplate.send(JmsConstant.DESTINATION, messageCreator);
 	}
 }
