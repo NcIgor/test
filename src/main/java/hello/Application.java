@@ -20,7 +20,7 @@ import org.springframework.jms.config.SimpleJmsListenerContainerFactory;
 @EnableConfigurationProperties
 @ComponentScan(basePackages = {
 //	"hello.cache", 
-	"hello.jms" 
+//	"hello.jms" 
 })
 public class Application {
     private static final Logger log = LoggerFactory.getLogger(Application.class);
