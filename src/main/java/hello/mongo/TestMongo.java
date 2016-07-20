@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class TestMongo implements CommandLineRunner {
 	private static final Logger log = LoggerFactory.getLogger(TestMongo.class);
 	
-	@Autowired
+	@Autowired(required=false)
 	private CustomerRepository repository;
 	
 	@Override

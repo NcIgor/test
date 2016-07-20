@@ -17,10 +17,11 @@ import org.springframework.jms.config.SimpleJmsListenerContainerFactory;
 @SpringBootApplication
 @Configuration
 
-@EnableConfigurationProperties
+//@EnableConfigurationProperties
 @ComponentScan(basePackages = {
 //	"hello.cache", 
 //	"hello.jms" 
+	"hello.mongo" 
 })
 public class Application {
     private static final Logger log = LoggerFactory.getLogger(Application.class);

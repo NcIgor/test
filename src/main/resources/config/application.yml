@@ -1,10 +1,16 @@
 spring:
-    profiles: dev
-    activemq:
-#      in-memory: true
-#      pooled: false
-      #http://activemq.apache.org/how-can-i-support-auto-reconnection.html
-      broker-url: failover:tcp://localhost:61616
-      user: user
-      password: pass
-      
+  profiles: dev
+  activemq:
+    #in-memory: true
+    #pooled: false
+    #http://activemq.apache.org/how-can-i-support-auto-reconnection.html
+    broker-url: failover:tcp://localhost:61616
+    user: user
+    password: pass
+    
+  datasource.driverClassName: com.mongodb.Mongo
+  data.mongodb:
+    repositories.enabled: false
+    host: 127.0.0.1
+    port: 27017
+    database: DigitalDiary
