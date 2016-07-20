@@ -14,7 +14,7 @@ public class Sender {
 	@Autowired
 	private JmsTemplate jmsTemplate;
 	
-	void sendMessage(String message){
+	void sendMessage(String destination, String message){
 		// Send a message
         MessageCreator messageCreator = new MessageCreator() {
             @Override
@@ -23,6 +23,6 @@ public class Sender {
             }
         };
         System.out.println("Sending a new message. : " + message);
-		jmsTemplate.send(JmsConstant.DESTINATION, messageCreator);
+		jmsTemplate.send(destination, messageCreator);
 	}
 }

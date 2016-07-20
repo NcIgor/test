@@ -22,6 +22,7 @@ public class TestMsgBroker implements CommandLineRunner {
 	}
 
 	private void send(String string) {
-		sender.sendMessage(string);
+		String d = JmsConstant.DESTINATION;
+		sender.sendMessage(d, string);
 	}
 }

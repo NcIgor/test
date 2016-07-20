@@ -41,12 +41,7 @@ public class Application {
 		}
 		ConfigurableApplicationContext context = app.run(args);
 
-//		// Clean out any ActiveMQ data from a previous run
-//        FileSystemUtils.deleteRecursively(new File("activemq-data"));
 
-        
-		
-		
-		context.close();
+//		context.close();
     }
 }

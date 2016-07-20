@@ -1,5 +1,6 @@
 package hello.jms;
 
 interface JmsConstant {
-	String DESTINATION = "mailbox-destination";
+	String DESTINATION = "ncemail_queue";
+//	String DESTINATION = "mailbox-destination";
 }
