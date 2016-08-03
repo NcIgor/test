@@ -1,4 +1,4 @@
-package hello.mongo;
+package hello.mongo.repo;
 
 import java.util.List;
 

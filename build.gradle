@@ -25,9 +25,18 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+	// https://mvnrepository.com/artifact/com.esotericsoftware.kryo/kryo
+	compile group: 'com.esotericsoftware.kryo', name: 'kryo', version: '2.24.0',
+
 	compile (
 		/* mongo DB */
+	'org.springframework.data:spring-data-mongodb'
+/*	
+		'org.mongodb:mongodb-driver-core:3.3.0',
+-		'org.mongodb:mongo-java-driver:3.3.0',
++		"org.springframework.boot:spring-boot-starter-data-mongodb"
 		"org.springframework.boot:spring-boot-starter-data-mongodb"
+*/
 	)    
 
     compile(
@@ -36,6 +45,8 @@ dependencies {
 		"org.springframework:spring-context-support",
 		"com.google.guava:guava:$guavaVersion"
     )
+
+	//"ma.glasnost.orika:orika-core:$orikaVersion",
     
     compile group: 'javax.cache', name: 'cache-api', version: '1.0.0'
     compile (

@@ -21,7 +21,7 @@ import org.springframework.jms.config.SimpleJmsListenerContainerFactory;
 @ComponentScan(basePackages = {
 //	"hello.cache", 
 //	"hello.jms" 
-	"hello.mongo" 
+	"hello.mongo.template" 
 })
 public class Application {
     private static final Logger log = LoggerFactory.getLogger(Application.class);

@@ -1,4 +1,4 @@
-package hello.mongo;
+package hello.mongo.repo;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,11 +16,11 @@ public class TestMongo implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		repository.deleteAll();
+//		repository.deleteAll();
 
 		// save a couple of customers
-		repository.save(new Customer("Alice", "Smith"));
-		repository.save(new Customer("Bob", "Smith"));
+//		repository.save(new Customer("Alice", "Smith"));
+//		repository.save(new Customer("Bob", "Smith"));
 
 		// fetch all customers
 		System.out.println("Customers found with findAll():");

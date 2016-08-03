@@ -13,4 +13,6 @@ spring:
     repositories.enabled: false
     host: 127.0.0.1
     port: 27017
-    database: DigitalDiary
+    username: 
+    uri: mongodb://localhost/ncemail
+    database: ncemail
