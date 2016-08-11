@@ -8,14 +8,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'idea'
 apply plugin: 'spring-boot'
-
-jar {
-    baseName = 'gs-caching'
-    version =  '0.1.0'
-}
 
 repositories {
     mavenCentral()
@@ -25,18 +18,25 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+    compile (
+    	'commons-io:commons-io:2.5',
+    	'org.apache.commons:commons-lang3:3.4',
+    	'org.apache.httpcomponents:httpcore:4.4.5',
+    	'org.apache.httpcomponents:fluent-hc:4.5.2'
+	)
+
 	// https://mvnrepository.com/artifact/com.esotericsoftware.kryo/kryo
 	compile group: 'com.esotericsoftware.kryo', name: 'kryo', version: '2.24.0',
 
 	compile (
 		/* mongo DB */
-	'org.springframework.data:spring-data-mongodb'
-/*	
-		'org.mongodb:mongodb-driver-core:3.3.0',
--		'org.mongodb:mongo-java-driver:3.3.0',
-+		"org.springframework.boot:spring-boot-starter-data-mongodb"
-		"org.springframework.boot:spring-boot-starter-data-mongodb"
-*/
+		'org.springframework.data:spring-data-mongodb'
+		/*	
+				'org.mongodb:mongodb-driver-core:3.3.0',
+		-		'org.mongodb:mongo-java-driver:3.3.0',
+		+		"org.springframework.boot:spring-boot-starter-data-mongodb"
+				"org.springframework.boot:spring-boot-starter-data-mongodb"
+		*/
 	)    
 
     compile(
