@@ -1,3 +1,20 @@
+Abstract Classes & methods. 
+Inheritance & Diamond problem.
+Interfaces. 
+Marker Interfaces. 
+Cloneable interface. 
+Default methods (Java 8). 
+Static methods in Interfaces. (Best practices) 
+
+Exceptions & Exception handling. 
+Checked & unchecked exceptions. 
+Finally block. 
+Try-with-resources statement. 
+Suppressed exceptions. 
+Assertion. 
+Exceptions Best Practices. 
+
+
 абстрактные классы
 ===
 http://ru.stackoverflow.com/questions/43777/%D0%97%D0%B0%D1%87%D0%B5%D0%BC-%D0%B0%D0%B1%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%82%D0%BD%D1%8B%D0%B9-%D0%BA%D0%BB%D0%B0%D1%81%D1%81-%D0%B2-java
