@@ -1,0 +1,53 @@
+http://developer.alexanderklimov.ru/android/java/interface.php
+
+Интерфейсы
+===
+Ключевое слово interface используется для создания полностью абстрактных классов. Создатель интерфейса определяет имена методов, списки аргументов и типы возвращаемых значений, но не тела методов.
+Наличие слова interface означает, что именно так должны выглядеть все классы, которые реализуют данный интерфейс. Таким образом, любой код, использующий конкретный интерфейс, знает только то, какие методы вызываются для этого интерфейса, но не более того.
+
+Константы в интерфейсах
+---
+модификаторы public static final
+данный подход не рекомендуют использовать.
+
+Расширение интерфейсов
+---
+Интерфейс может наследоваться от другого интерфейса через ключевое слово extends.
+
+
+Методы обратного вызова
+---
+Интерфейсы часто используются для создания методов обратного вызова (callback). 
+
+
+
+Exception 
+===
+https://docs.oracle.com/javase/tutorial/essential/exceptions/definition.html
+Definition: An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.
+
+
+Assertions
+===
+https://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html
+Enabling and Disabling Assertions
+By default, assertions are disabled at runtime. Two command-line switches allow you to selectively enable or disable assertions.
+
+enable assertions -enableassertions, or -ea
+disable assertions -disableassertions, or -da
+granularity:
+	no arguments		- Enables or disables assertions in all classes except system classes.
+	packageName... 		- Enables or disables assertions in the named package and any subpackages.
+	...					- Enables or disables assertions in the unnamed package in the current working directory.
+	className			- Enables or disables assertions in the named class
+	
+		For example, the following command runs a program, BatTutor, with assertions enabled in only package com.wombat.fruitbat and its subpackages:
+		 java -ea:com.wombat.fruitbat... BatTutor
+		enabled in package com.wombat.fruitbat but disabled in class com.wombat.fruitbat.Brickbat:
+		 java -ea:com.wombat.fruitbat... -da:com.wombat.fruitbat.Brickbat BatTutor 
+
+enable assertions in all system classes, use a different switch: -enablesystemassertions, or -esa. 
+disable assertions in system classes, use -disablesystemassertions, or -dsa.
+
+For example, the following command runs the BatTutor program with assertions enabled in system classes, as well as in the com.wombat.fruitbat package and its subpackages:
+ java -esa -ea:com.wombat.fruitbat... 
