@@ -54,6 +54,9 @@ http://developer.alexanderklimov.ru/android/java/interface.php
 
 Exception 
 ===
+https://www.tutorialspoint.com/java/java_exceptions.htm
+
+
 https://docs.oracle.com/javase/tutorial/essential/exceptions/definition.html
 Definition: An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.
 
